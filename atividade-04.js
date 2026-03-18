@@ -55,13 +55,13 @@
 //    "Retângulo | Largura: <largura> | Altura: <altura> | Área: <area> | Perímetro: <perimetro>"
 
 // → Seu código aqui:
-let largura = 8 
-let altura = 5
+// let largura = 8 
+// let altura = 5
 
-let area = largura * altura
-let perimetro = 2 * largura + 2 * altura
+// let area = largura * altura
+// let perimetro = 2 * largura + 2 * altura
 
-  console.log(`Retângulo | Largura: ${largura} | Altura: ${altura} | Área: ${area} | Perímetro: ${perimetro}`);
+//   console.log(`Retângulo | Largura: ${largura} | Altura: ${altura} | Área: ${area} | Perímetro: ${perimetro}`);
 
 
 // ------------------------------------------------------------
@@ -78,8 +78,13 @@ let perimetro = 2 * largura + 2 * altura
 
 // → Seu código aqui:
 
+// let precoOriginal = 250
+// let percentualDesconto = 15
 
-console.log("_______________________________");
+// let valorDesconto = precoOriginal * percentualDesconto / 100
+// let precoFinal = precoOriginal - valorDesconto
+
+// console.log(`Preço original: R$ ${precoOriginal} | Desconto: R$ ${percentualDesconto} | Preço final: R$ ${precoFinal}`);
 
 
 // ------------------------------------------------------------
@@ -94,9 +99,10 @@ console.log("_______________________________");
 //    "Pontos após <tipo da operação>: <valor>"
 
 // → Seu código aqui:
-
-
-console.log("_______________________________");
+// let pontos = 100
+// //pontos += 50
+// pontos -= 30
+// console.log(`pontos depois de subtrair :${pontos}`);
 
 
 // ------------------------------------------------------------
@@ -110,9 +116,18 @@ console.log("_______________________________");
 // f) Incremente "nivel" três vezes usando ++nivel (prefixo) e exiba cada resultado.
 
 // → Seu código aqui:
+// let vidas = 3 
 
+// //console.log(vidas);
 
-console.log("_______________________________");
+// vidas--
+
+// let nivel = 1
+
+// ++nivel
+
+// console.log(nivel);
+
 
 
 // ------------------------------------------------------------
@@ -127,78 +142,114 @@ console.log("_______________________________");
 // f) Use Math.min() para encontrar o menor entre 42, 17, 89, 5, 63. Exiba o resultado.
 
 // → Seu código aqui:
+// let nota = 7.3
 
 
-console.log("_______________________________");
+// console.log(Math.round(nota));
+// console.log(Math.floor(nota));
+// console.log(Math.ceil(nota));
+
+//let temperatura = -12.5
+//console.log(Math.abs(temperatura));
+// console.log(Math.max(42, 17, 89, 5, 63));
+// console.log(Math.min(42, 17, 89, 5, 63));
 
 
-// ------------------------------------------------------------
-// EXERCÍCIO 7 – Média de notas
-// ------------------------------------------------------------
-// a) Peça ao usuário 3 notas (use questionFloat()).
-// b) Calcule a média aritmética das 3 notas.
-// c) Exiba no console:
-//    "Nota 1: <n1> | Nota 2: <n2> | Nota 3: <n3>"
-//    "Média: <media>" (com 2 casas decimais usando toFixed(2))
 
-// → Seu código aqui:
+// // ------------------------------------------------------------
+// // EXERCÍCIO 7 – Média de notas
+// // ------------------------------------------------------------
+// // a) Peça ao usuário 3 notas (use questionFloat()).
+// // b) Calcule a média aritmética das 3 notas.
+// // c) Exiba no console:
+// //    "Nota 1: <n1> | Nota 2: <n2> | Nota 3: <n3>"
+// //    "Média: <media>" (com 2 casas decimais usando toFixed(2))
 
+// // → Seu código aqui:
+// let nota01 = LerTeclado.questionFloat("nota 1: ")
+//   let nota02 = LerTeclado.questionFloat("nota 2: ")
+//   let nota03 = LerTeclado.questionFloat("nota 3: ")
 
-console.log("_______________________________");
+//   let media = (nota01 + nota02 + nota03) / 3
 
+//   console.log(`Nota 1: ${nota01},\n Nota 2: ${nota02},\n Nota 3: ${nota03},\n Media: ${media.toFixed(2)} `)
 
-// ------------------------------------------------------------
-// EXERCÍCIO 8 – Calculadora de troco
-// ------------------------------------------------------------
-// a) Peça ao usuário o valor total da compra (questionFloat()).
-// b) Peça ao usuário o valor entregue pelo cliente (informando que deve ser maior que o valor da compra) (questionFloat()).
-// c) Calcule o troco (valorEntregue - totalCompra).
-// d) Exiba no console:
-//    "Total da compra:  R$ <total>"
-//    "Valor entregue:   R$ <entregue>"
-//    "Troco:            R$ <troco>"
-//    Use toFixed(2) em todos os valores.
-
-// → Seu código aqui:
+// console.log("_______________________________");
 
 
-console.log("_______________________________");
+// // ------------------------------------------------------------
+// // EXERCÍCIO 8 – Calculadora de troco
+// // ------------------------------------------------------------
+// // a) Peça ao usuário o valor total da compra (questionFloat()).
+// // b) Peça ao usuário o valor entregue pelo cliente (informando que deve ser maior que o valor da compra) (questionFloat()).
+// // c) Calcule o troco (valorEntregue - totalCompra).
+// // d) Exiba no console:
+// //    "Total da compra:  R$ <total>"
+// //    "Valor entregue:   R$ <entregue>"
+// //    "Troco:            R$ <troco>"
+// //    Use toFixed(2) em todos os valores.
+
+// // → Seu código aqui:
+// let valor = LerTeclado.questionFloat("valor total da compra: ")
+//   let valor_cliente = LerTeclado.questionFloat("informe o valor entregue pelo cliente(maior ou igual ao valor da compra): ")
+
+//   let troco = valor - valor_cliente
+
+//   console.log(`
+//       Total da compra:  R$ ${valor.toFixed(2)}
+//       Valor entregue:   R$ ${valor_cliente.toFixed(2)}
+//       Troco:            R$ ${troco.toFixed(2)}
+//       `)
 
 
-// ------------------------------------------------------------
-// EXERCÍCIO 9 – Valor total de listas
-// ------------------------------------------------------------
-// a) Dada uma lista de preços, calcule e exiba o total.
-let precos = [29.90, 49.99, 15.75, 99.90];
-// b) Dada uma lista de notas, calcule e exiba a média.
-let notas = [7.5, 8.2, 6.5, 9.0];
-// c) Dada uma lista de idades, exiba a maior e a menor idade utilizando das funções Math().
-let idades = [15, 22, 30, 18, 25];
-
-// → Seu código aqui:
+// console.log("_______________________________");
 
 
-console.log("_______________________________");
+// // ------------------------------------------------------------
+// // EXERCÍCIO 9 – Valor total de listas
+// // ------------------------------------------------------------
+// // a) Dada uma lista de preços, calcule e exiba o total.
+// let precos = [29.90, 49.99, 15.75, 99.90];
+// // b) Dada uma lista de notas, calcule e exiba a média.
+// let notas = [7.5, 8.2, 6.5, 9.0];
+// // c) Dada uma lista de idades, exiba a maior e a menor idade utilizando das funções Math().
+// let idades = [15, 22, 30, 18, 25];
+
+// // → Seu código aqui:
+// let soma = precos.reduce((total, n) => total + n, 0) // reduce junta todos os n da lista em um so
+
+// console.log(soma)
+
+// let soma_notas = notas.reduce((total, n) => total + n, 0)
+// let media_notas = soma_notas / notas.length
+
+// console.log(media_notas)
+
+// console.log(maior da lista: ${Math.max(idades)})
+// console.log(menor da lista: ${Math.min(idades)})
 
 
-// ------------------------------------------------------------
-// EXERCÍCIO 10 – Trabalhando com objetos
-// ------------------------------------------------------------
-// Dado o objeto turma:
-let turma = {
-  aluno1: {
-    nome: "João",
-    notas: []
-  },
-  aluno2: {
-    nome: "Maria",
-    notas: []
-  },
-  aluno3: {
-    nome: "Pedro",
-    notas: []
-  }
-}
+// console.log("_______________________________");
+
+
+// // ------------------------------------------------------------
+// // EXERCÍCIO 10 – Trabalhando com objetos
+// // ------------------------------------------------------------
+// // Dado o objeto turma:
+// let turma = {
+//   aluno1: {
+//     nome: "João",
+//     notas: []
+//   },
+//   aluno2: {
+//     nome: "Maria",
+//     notas: []
+//   },
+//   aluno3: {
+//     nome: "Pedro",
+//     notas: []
+//   }
+// }
 // a) Sem alterar o objeto (utilize somente push), peça para o usuário 3 notas para cada aluno, indicando a quem pertencerá cada nota
 // b) Calcule a média de notas de cada aluno e exiba no console, indicando a quem pertence cada média
 // c) Exiba a média geral da turma
