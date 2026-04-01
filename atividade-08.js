@@ -4,7 +4,7 @@
 // Instruções: resolva cada exercício no espaço indicado.
 // ============================================================
 
-
+let LerTeclado = require('readline-sync')
 // ------------------------------------------------------------
 // EXERCÍCIO 1 – Switch simples com número
 // ------------------------------------------------------------
@@ -151,9 +151,28 @@ console.log("_______________________________");
 //    - default → "Opção inválida."
 
 // → Seu código aqui:
-let turno = lerteclado.questionInt(escolha um turno)
+// let turno = LerTeclado.questionInt('escolha um turno')
 
-case 1
+// switch (turno) {
+
+//     case 'Manhã':
+//     console.log('Bom dia! Turno da manhã.')
+//     break;
+
+//     case 'Tarde':
+//     console.log('Boa tarde! Turno da tarde.')
+//     break;
+
+//     case 'Noite':
+//     console.log('Boa noite! Turno da noite.')
+//     break;
+//     default:
+//     console.log('Opção inválida.')
+
+
+//}
+
+
 
 console.log("_______________________________");
 
@@ -171,7 +190,29 @@ console.log("_______________________________");
 //    - default     → "Estação não reconhecida."
 
 // → Seu código aqui:
+// let estacao = LerTeclado.question('qual sua estacao do ano favorita?')
 
+//     switch (estacao) {
+
+//     case 'Verao':
+//     console.log('Dias quentes e férias!')
+//     break;
+
+//     case 'outono':
+//     console.log('Folhas caindo e temperaturas amenas.')
+//     break;
+
+//     case 'inverno':
+//     console.log('Frio, cobertores e chocolate quente.')
+//     break;
+
+//     case 'primavera':
+//     console.log('Flores, calor e renovação.')
+//     break;
+//     default:
+//     console.log("Estação não reconhecida.")
+
+// }
 
 console.log("_______________________________");
 
@@ -187,7 +228,50 @@ console.log("_______________________________");
 // c) Exiba também o nome do dia correspondente (Segunda a Domingo).
 
 // → Seu código aqui:
+// let dias = LerTeclado.questionInt('Escolha um numero de 1 a 7: ')
 
+// switch (dias) {
+//     case 1:
+//         console.log('Dia útil')
+//         console.log('segunda')
+//         break;
+    
+//     case 2:
+//         console.log('Dia útil')
+//         console.log('terca')
+//         break;
+    
+//     case 3:
+//         console.log('Dia útil')
+//         console.log('quarta')
+//         break;
+    
+//     case 4:
+//         console.log('Dia útil')
+//         console.log('quinta')
+//         break;
+    
+//     case 5:
+//         console.log('Dia útil')
+//         console.log('sexta')
+//         break;
+    
+//     case 6:
+//         console.log('Final de semana')
+//         console.log('sabado')
+//         break;
+    
+//     case 7:
+//         console.log('Final de semana')
+//         console.log('domingo')
+//         break;
+
+//     default:
+//     console.log('Numero invalido')
+
+
+
+// }
 
 console.log("_______________________________");
 
@@ -208,6 +292,10 @@ console.log("_______________________________");
 // c) Exiba o objeto com console.table().
 
 // → Seu código aqui:
+let produto =  
+LerTeclado.question('Nome : ')
+LerTeclado.questionInt('categoria : ')
+LerTeclado.questionInt('preco : ')
 
 
 console.log("_______________________________");
@@ -229,6 +317,24 @@ console.log("_______________________________");
 // c) Exiba: "<nome> – Nota: <nota> | Conceito: <conceito> | <mensagem>"
 
 // → Seu código aqui:
+// let infos =  LerTeclado.question('Nome : ')
+// let infos1 =  LerTeclado.questionInt('nota de 0 a 10: ')
+
+// switch (infos1) {
+
+//     case 10 
+
+
+
+
+
+
+// }
+
+
+
+
+
 
 
 console.log("_______________________________");

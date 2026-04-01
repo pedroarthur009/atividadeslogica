@@ -196,10 +196,10 @@ console.log("_______________________________");
 //    "Item caro (> R$ <precoMaximo>)? : <esteItemEhCaro ? "Sim" : "Não">"
 
 // → Seu código aqui:
-let produto = LerTeclado.question('Diga um produto')
+// let produto = LerTeclado.question('Diga um produto')
 
-const
-console.log("_______________________________");
+// const
+// console.log("_______________________________");
 
 
 // ------------------------------------------------------------
