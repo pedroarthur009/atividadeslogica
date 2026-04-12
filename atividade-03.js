@@ -289,6 +289,27 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
+//  let nome = LerTeclado.question('Qual o nome?')
+//  let categoria = LerTeclado.question('Qual sua categoria?')
+//  let preco = LerTeclado.questionFloat('What is the price?')
+//  let estoque = LerTeclado.questionInt('Qual e o estoque?')
+// let disponibilidade = LerTeclado.keyInYN('Está disponível para venda?')
+// const readline = require('readline-sync');
+
+//  let disponivel1 = LerTeclado.keyInYN('Está disponível para venda?')
+
+
+//  let produto = {
+//     name: nome,
+//     categoria1 : categoria,
+//     preco1 : preco,
+//     estoque1 : estoque,
+//     disponivel : disponivel1
+// };
+    
+
+//     console.table(produto)
+    //console.log(`Produto: ${nome} | Categoria: ${categoria} | Estoque: ${estoque} un`)
 
 console.log("_______________________________");
 
@@ -304,3 +325,38 @@ console.log("_______________________________");
 // c) Exiba a lista com console.table().
 // d) Exiba somente o nome e preço do 2 medicamento.
 // e) Exiba somente o nome e se está em estoque o 1 medicamento.
+
+let estoqueFarmacia = []
+
+
+let nome1 = LerTeclado.question("Nome do medicamento 1: ")
+let preco1 = LerTeclado.question("Preço: ")
+let emEstoque1 = LerTeclado.keyInYN("Está em estoque? (s/n): ")
+
+let medicamento1 = {
+    nome: nome1,
+    preco: preco1,
+    emEstoque: emEstoque1
+};
+
+
+let nome2 = LerTeclado.question("Nome do medicamento 2: ")
+let preco2 = LerTeclado.question("Preço: ")
+let emEstoque2 = LerTeclado.keyInYN("Está em estoque? (s/n): ")
+
+let medicamento2 = {
+    nome: nome2,
+    preco: preco2,
+    emEstoque: emEstoque2
+};
+
+
+estoqueFarmacia.push(medicamento1)
+estoqueFarmacia.push(medicamento2)
+
+
+console.table(estoqueFarmacia);
+
+
+console.log(`2º Medicamento: ${estoqueFarmacia[1].nome} | Preço: R$ ${estoqueFarmacia[1].preco}`);
+console.log(`1º Medicamento: ${estoqueFarmacia[0].nome} | Em estoque: ${estoqueFarmacia[0].emEstoque}`);
