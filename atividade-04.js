@@ -11,7 +11,7 @@
 // Dica: Ao terminar um exercício, comente-o. Assim os dados
 //       não serão solicitados novamente.
 // ============================================================
-
+let LerTeclado = require('readline-sync')
 
 // ------------------------------------------------------------
 // EXERCÍCIO 1 – Operações básicas
@@ -231,25 +231,24 @@
 
 // console.log("_______________________________");
 
-
-// // ------------------------------------------------------------
+-*// // ------------------------------------------------------------
 // // EXERCÍCIO 10 – Trabalhando com objetos
 // // ------------------------------------------------------------
 // // Dado o objeto turma:
-// let turma = {
-//   aluno1: {
-//     nome: "João",
-//     notas: []
-//   },
-//   aluno2: {
-//     nome: "Maria",
-//     notas: []
-//   },
-//   aluno3: {
-//     nome: "Pedro",
-//     notas: []
-//   }
-// }
+let turma = {
+  aluno1: {
+    nome: "João",
+    notas: []
+  },
+  aluno2: {
+    nome: "Maria",
+    notas: []
+  },
+  aluno3: {
+    nome: "Pedro",
+    notas: []
+  }
+}
 // a) Sem alterar o objeto (utilize somente push), peça para o usuário 3 notas para cada aluno, indicando a quem pertencerá cada nota
 // b) Calcule a média de notas de cada aluno e exiba no console, indicando a quem pertence cada média
 // c) Exiba a média geral da turma
@@ -257,6 +256,20 @@
 // e) Exiba a nota mais alta e a mais baixa da turma
 
 // → Seu código aqui:
+turma.aluno1.notas.push(LerTeclado.questionInt('primeira nota de mateus:'));
+turma.aluno1.notas.push(LerTeclado.questionInt('segunda nota de mateus:'));
+turma.aluno1.notas.push(LerTeclado.questionInt('terceira nota de mateus:'));
+
+    turma.aluno2.notas.push(LerTeclado.questionInt('primeira nota de pedro:'));
+    turma.aluno2.notas.push(LerTeclado.questionInt('segunda nota de pedro:'));
+    turma.aluno2.notas.push(LerTeclado.questionInt('terceira nota de pedro:'));
+
+        turma.aluno3.notas.push(LerTeclado.questionInt('primeira nota de teus:'));
+        turma.aluno3.notas.push(LerTeclado.questionInt('segunda nota de teus:'));
+        turma.aluno3.notas.push(LerTeclado.questionInt('terceira nota de teus:'));
+
+let media1 = turma.notas / 3
 
 
-console.log("_______________________________");
+
+console.log(media1);
