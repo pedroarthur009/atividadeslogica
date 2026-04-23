@@ -76,14 +76,14 @@ let LerTeclado = require('readline-sync')
 // c) Exiba: "A soma de 1 até <N> é <soma>"
 
 // → Seu código aqui:
-let postiN = LerTeclado.questionInt('Me diga um numero positivo N: ')
-let soma = 0
+// let postiN = LerTeclado.questionInt('Me diga um numero positivo N: ')
+// let soma = 0
 
-for (let i = 1; i <= postiN; i++) {
-soma +=i;
+// for (let i = 1; i <= postiN; i++) {
+// soma +=i;
 
-}
-      console.log(`A soma de 1 até ${postiN} é ${soma}`);
+// }
+//       console.log(`A soma de 1 até ${postiN} é ${soma}`);
 
 
 
@@ -98,9 +98,12 @@ soma +=i;
 // c) Exiba: "<N>! = <resultado>"
 
 // → Seu código aqui:
+// let numeroint = LerTeclado.questionInt('Numero inteiro de 1 a 10')
+// let fatorN = 1
 
-
-console.log("_______________________________");
+// for (let i = 1; i <= numeroint; i++)
+//     {fatorN = fatorN * i}
+// console.log(`${numeroint} = ${fatorN}`);
 
 
 // ------------------------------------------------------------
@@ -113,7 +116,10 @@ console.log("_______________________________");
 // c) Ao final, exiba: "Total de cidades: <quantidade>"
 
 // → Seu código aqui:
+for(let i = 0; i <= cidades.length; i++){
+    console.log(`[${i}] - ${cidades[i]}`);
 
+}
 
 console.log("_______________________________");
 
