@@ -128,17 +128,26 @@ console.log("_______________________________");
 // EXERCÍCIO 8 – Maior e menor valor
 // ------------------------------------------------------------
 // a) Declare o array:
-//    const temperaturas = [28, 15, 32, 9, 21, 37, 14, 25];
+  const temperaturas = [28, 15, 32, 9, 21, 37, 14, 25];
 // b) Usando um for, encontre o maior e o menor valor do array.
 // c) Exiba:
 //    "Maior temperatura: <maior>°C"
 //    "Menor temperatura: <menor>°C"
 
 // → Seu código aqui:
+// let maior = temperaturas[0];
+// let menor = temperaturas[0];
 
-
-console.log("_______________________________");
-
+// for(let i = 1; i < temperaturas.length; i++){
+//     if (temperaturas[i] < menor) {
+//         menor = temperaturas[i];
+//     }
+//     if (temperaturas[i] > maior) {
+//         maior = temperaturas[i];
+//     }
+// }
+// console.log(`Maior temperatura: ${maior} °C`);
+// console.log(`Menor temperatura: ${menor} °C`);
 
 // ------------------------------------------------------------
 // EXERCÍCIO 9 – Contando com condição
@@ -149,6 +158,18 @@ console.log("_______________________________");
 //    - Quantas pessoas são menores de idade (< 18)
 //    - Quantas são maiores de idade (>= 18)
 // c) Exiba os dois totais.
+
+let menores = 0;
+let maiores = 0;
+
+for (let i = 0; i < idades.length; i++) {
+    if (idades[i] < 18) {
+        menores++;
+    } else {
+        maiores++;
+    }
+}
+
 
 // → Seu código aqui:
 
@@ -168,7 +189,22 @@ console.log("_______________________________");
 //    "R$ 3200,00 – Acima da média"
 
 // → Seu código aqui:
+const salarios = [1800, 3200, 950, 4500, 2100, 1500, 7800, 2900];
 
+let soma = 0;
+
+for (let i = 0; i < salarios.length; i++) {
+    soma += salarios[i];
+}
+
+const media = soma / salarios.length;
+
+console.log(`Média salarial: R$ ${media.toFixed(2)}`);
+
+for (let i = 0; i < salarios.length; i++) {
+    let status = salarios[i] >= media ? "Acima da média" : "Abaixo da média";
+    console.log(`R$ ${salarios[i].toFixed(2)} – ${status}`);
+}
 
 console.log("_______________________________");
 
@@ -191,7 +227,57 @@ console.log("_______________________________");
 // g) Exiba o array 'turma' com console.table().
 
 // → Seu código aqui:
+const turma = [];
 
+for (let i = 0; i < 3; i++) {
+    const nome = prompt(`Digite o nome do aluno ${i + 1}:`);
+    const notas = [];
+
+    for (let j = 0; j < 3; j++) {
+        const nota = parseFloat(prompt(`Digite a nota ${j + 1} de ${nome}:`));
+        notas.push(nota);
+    }
+
+    turma.push({ nome, notas });
+}
+
+let somaTurma = 0;
+let totalNotas = 0;
+
+for (let i = 0; i < turma.length; i++) {
+    for (let j = 0; j < turma[i].notas.length; j++) {
+        somaTurma += turma[i].notas[j];
+        totalNotas++;
+    }
+}
+
+const media = somaTurma / totalNotas;
+
+for (let i = 0; i < turma.length; i++) {
+    let somaAluno = 0;
+
+    for (let j = 0; j < turma[i].notas.length; j++) {
+        somaAluno += turma[i].notas[j];
+    }
+
+    const mediaAluno = somaAluno / turma[i].notas.length;
+
+    let situacao = "";
+
+    if (mediaAluno >= 7) {
+        situacao = "Aprovado";
+    } else if (mediaAluno >= 5) {
+        situacao = "Recuperação";
+    } else {
+        situacao = "Reprovado";
+    }
+
+    console.log(`${turma[i].nome}: ${mediaAluno.toFixed(2)} – ${situacao}`);
+}
+
+console.log(`Média da turma: ${media.toFixed(2)}`);
+
+console.table(turma);
 
 console.log("_______________________________");
 
@@ -210,6 +296,36 @@ console.log("_______________________________");
 // f) Exiba o array com console.table().
 
 // → Seu código aqui:
+const estoque = [];
 
+const quantidade = questionInt("Quantos produtos deseja cadastrar? ");
+
+for (let i = 0; i < quantidade; i++) {
+    const nome = question(`Nome do produto ${i + 1}: `);
+    const preco = questionFloat(`Preço do produto ${i + 1}: `);
+
+    estoque.push({ nome, preco });
+}
+
+for (let i = 0; i < estoque.length; i++) {
+    console.log(`${estoque[i].nome}: R$ ${estoque[i].preco.toFixed(2)}`);
+}
+
+let maisCaro = estoque[0];
+let maisBarato = estoque[0];
+
+for (let i = 1; i < estoque.length; i++) {
+    if (estoque[i].preco > maisCaro.preco) {
+        maisCaro = estoque[i];
+    }
+    if (estoque[i].preco < maisBarato.preco) {
+        maisBarato = estoque[i];
+    }
+}
+
+console.log(`Mais caro: ${maisCaro.nome} - R$ ${maisCaro.preco.toFixed(2)}`);
+console.log(`Mais barato: ${maisBarato.nome} - R$ ${maisBarato.preco.toFixed(2)}`);
+
+console.table(estoque);
 
 console.log("_______________________________");
