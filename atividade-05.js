@@ -76,29 +76,29 @@ console.log("_______________________________");
 //   4) true e 1
 
 // → Seu código aqui:
-// 1) 5 e 5
-let a1 = 5;
-let b1 = 5;
-console.log(`${a1} == ${b1} → ${a1 == b1}`);
-console.log(`${a1} === ${b1} → ${a1 === b1}`);
+// // 1) 5 e 5
+// let a1 = 5;
+// let b1 = 5;
+// console.log(`${a1} == ${b1} → ${a1 == b1}`);
+// console.log(`${a1} === ${b1} → ${a1 === b1}`);
 
-// 2) 5 e "5"
-let a2 = 10;
-let b2 = "10";
-console.log(`${a2} == ${b2} → ${a2 == b2}`);
-console.log(`${a2} === ${b2} → ${a2 === b2}`);
+// // 2) 5 e "5"
+// let a2 = 10;
+// let b2 = "10";
+// console.log(`${a2} == ${b2} → ${a2 == b2}`);
+// console.log(`${a2} === ${b2} → ${a2 === b2}`);
 
-// 3) 7 e 3
-let a3 = 7;
-let b3 = 3;
-console.log(`${a3} == ${b3} → ${a3 == b3}`);
-console.log(`${a3} === ${b3} → ${a3 === b3}`);
+// // 3) 7 e 3
+// let a3 = 7;
+// let b3 = 3;
+// console.log(`${a3} == ${b3} → ${a3 == b3}`);
+// console.log(`${a3} === ${b3} → ${a3 === b3}`);
 
-// 4) true e 1
-let a4 = true;
-let b4 = 1;
-console.log(`${a4} == ${b4} → ${a4 == b4}`);
-console.log(`${a4} === ${b4} → ${a4 === b4}`);
+// // 4) true e 1
+// let a4 = true;
+// let b4 = 1;
+// console.log(`${a4} == ${b4} → ${a4 == b4}`);
+// console.log(`${a4} === ${b4} → ${a4 === b4}`);
 
 
 
@@ -196,12 +196,16 @@ console.log("_______________________________");
 //    "Item caro (> R$ <precoMaximo>)? : <esteItemEhCaro ? "Sim" : "Não">"
 
 // → Seu código aqui:
-// let produto = LerTeclado.question('Diga um produto')
+ let preco = LerTeclado.question('Diga um valor: ')
 
-// const
-// console.log("_______________________________");
+ const precoMaximo = 100
 
-
+ let estaDentroDoOrcamento = preco <= precoMaximo
+ let esteItemEhCaro = preco > precoMaximo
+  console.log(`Preço informado R$ ${preco}`);
+  console.log(`Dentro do orçamento (≤ R$ ${precoMaximo})? : ${estaDentroDoOrcamento} ? "Sim" : "Não">"`);
+  console.log(`Item caro (> R$ ${precoMaximo})? : ${esteItemEhCaro} ? "Sim" : "Não">"`);
+  
 // ------------------------------------------------------------
 // EXERCÍCIO 7 – Comparando notas
 // ------------------------------------------------------------
@@ -216,6 +220,9 @@ console.log("_______________________________");
 // d) Similar ao exemplo acima, verifique e exiba qual pessoa é mais velha.
 
 // → Seu código aqui:
+
+
+let cadastro
 
 
 console.log("_______________________________");

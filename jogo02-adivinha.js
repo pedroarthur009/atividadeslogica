@@ -1,4 +1,4 @@
-// ============================================================
+ 6// ============================================================
 //   JOGO: Adivinhe o Número
 // ============================================================
 //
@@ -118,6 +118,18 @@ console.log(`Resultado: ${venceu ? "Vitória" : "Derrota"}`);
 //           let min = NUM_MIN;
 //           let max = NUM_MAX;
 // PASSO 3 – Use um for para as tentativas.
+
+
+
+
+
+
+
+
+
+
+
+
 //   a) Calcule o palpite do computador: meio do intervalo
 //   b) Exiba: "Tentativa <i>: Meu palpite é <palpite>!"
 //   c) Pergunte ao jogador o resultado com questionInt():
@@ -127,4 +139,9 @@ console.log(`Resultado: ${venceu ? "Vitória" : "Derrota"}`);
 // PASSO 5 – Se o computador não acertar, exiba uma mensagem de derrota e o número que o jogador estava pensando.
 
 // Implemente seu código abaixo:
+
+let numint = lerTeclado.questionInt('Me diga um numero de 1 a 100: ')
+
+let min = NUM_MIN;
+let max = NUM_MAX;
 
