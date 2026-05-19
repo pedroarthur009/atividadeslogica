@@ -17,7 +17,11 @@
 // d) Exiba o canto inferior direito (use .length).
 
 // → Seu código aqui:
+console.log(matriz.length)
+console.log(matriz[0])
+console.log(matriz[1][1])
 
+console.log(matriz.length);
 
 console.log("_______________________________");
 
@@ -36,6 +40,15 @@ console.log("_______________________________");
 // c) Calcule e exiba a SOMA de todos os elementos da matriz.
 
 // → Seu código aqui:
+let soma = 0;
+for (let i = 0; i < mtri.length; i++) {
+  for (let j = 0; j < mtri[i].length; j++) {
+    soma += mtri[i][j];
+  }
+}
+
+console.log(`${soma}`);
+
 
 
 console.log("_______________________________");
@@ -54,6 +67,32 @@ console.log("_______________________________");
 // c) Exiba também a posição (linha, coluna) onde cada um está.
 
 // → Seu código aqui:
+let maior = m[0][0]
+let menor = m[0][0]
+
+let posMaior = [0, 0]
+let posMenor = [0, 0]
+
+for (let i = 0; i < m.length; i++) {
+  for (let j = 0; j < m[i].length; j++) {
+
+    if (m[i][j] > maior) {
+      maior = m[i][j]
+      posMaior = [i, j]
+    }
+
+    if (m[i][j] < menor) {
+      menor = m[i][j]
+      posMenor = [i, j]
+    }
+  }
+}
+
+console.log("Maior valor:", maior)
+console.log("Posição do maior:", posMaior)
+
+console.log("Menor valor:", menor)
+console.log("Posição do menor:", posMenor)
 
 
 console.log("_______________________________");
