@@ -77,51 +77,53 @@ let LerTeclado = require('readline-sync')
 // Após finalizar, me chame para eu verificar a lógica - questão importante
 
 // → Seu código aqui:
-  let nome4 = LerTeclado.question('nome: ');
-  let idade2 = LerTeclado.question('idade: ');
-  let cidade3 = LerTeclado.question('cidade: ');
+//   let nome4 = LerTeclado.question('nome: ');
+//   let idade2 = LerTeclado.question('idade: ');
+//   let cidade3 = LerTeclado.question('cidade: ');
 
-    function meusDados() {
-     nome4 = LerTeclado.question('nome: ');
-     idade2 = LerTeclado.question('idade: ');
-     cidade3 = LerTeclado.question('cidade: ');
+//     function meusDados() {
+//      nome4 = LerTeclado.question('nome: ');
+//      idade2 = LerTeclado.question('idade: ');
+//      cidade3 = LerTeclado.question('cidade: ');
 
-    }
+//     }
 
-    function exibirDados() {
-        console.log('-------------------------')
-        console.log(`Nome : ${nome4}`)
-        console.log(`Idade : ${idade2}`)
-        console.log(`cidade : ${cidade3}`)
-        console.log('-------------------------')
-    }
+//     function exibirDados() {
+//         console.log('-------------------------')
+//         console.log(`Nome : ${nome4}`)
+//         console.log(`Idade : ${idade2}`)
+//         console.log(`cidade : ${cidade3}`)
+//         console.log('-------------------------')
+//     }
 
 
-        let nome1 = LerTeclado.question('nome: ');
-        let idade1 = LerTeclado.question('idade: ');
-        let cidade1 = LerTeclado.question('cidade: ');
+//         let nome1 = LerTeclado.question('nome: ');
+//         let idade1 = LerTeclado.question('idade: ');
+//         let cidade1 = LerTeclado.question('cidade: ');
 
-        function meusDados1() {
-        let nome1 = LerTeclado.question('nome: ');
-        let idade1 = LerTeclado.question('idade: ');
-        let cidade1 = LerTeclado.question('cidade: ');
+//         function meusDados1() {
+//         let nome1 = LerTeclado.question('nome: ');
+//         let idade1 = LerTeclado.question('idade: ');
+//         let cidade1 = LerTeclado.question('cidade: ');
 
-        }
+//         }
 
-        function exibirDados1() {
-            console.log('-------------------------')
-            console.log(`Nome : ${nome1}`)
-            console.log(`Idade : ${idade1}`)
-            console.log(`cidade : ${cidade1}`)
-            console.log('-------------------------')
-        }
+//         function exibirDados1() {
+//             console.log('-------------------------')
+//             console.log(`Nome : ${nome1}`)
+//             console.log(`Idade : ${idade1}`)
+//             console.log(`cidade : ${cidade1}`)
+//             console.log('-------------------------')
+//         }
         
 
-        let dadosgeral = {
-            exibirDados()
-            exibirDados1()
-        }
-console.log(dadosgeral);
+//         let dadosgeral = {
+//             exibirDados,
+//             exibirDados1
+//         };
+        
+//         dadosgeral.exibirDados();
+//         dadosgeral.exibirDados1();
 
 
 // ------------------------------------------------------------
@@ -135,6 +137,15 @@ console.log(dadosgeral);
 
 // → Seu código aqui:
 
+// function sortear() {
+//     let ale1= (Math.floor(Math.random() * 100) + 1)
+//     console.log(`${ale1}`)
+// }
+// sortear()
+// sortear()
+// sortear()
+// sortear()
+// sortear()
 
 console.log("_______________________________");
 
@@ -152,9 +163,24 @@ console.log("_______________________________");
 // c) Chame as duas funções.
 
 // → Seu código aqui:
+// function tabuadaDoCinco() {
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`5 x ${i} = ${5 * i}`);
+    
+//     }
+// }
+
+// function tabuadaDoSete() {
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`7 x ${i} = ${7 * i}`);
+//     }
+// }
+
+// tabuadaDoCinco()
 
 
-console.log("_______________________________");
+// tabuadaDoSete()
+// console.log();
 
 
 // ------------------------------------------------------------
@@ -167,8 +193,12 @@ console.log("_______________________________");
 // b) Chame a função 3 vezes.
 
 // → Seu código aqui:
-
-
+// function converterTemperatura () {
+//     let C = LerTeclado.questionInt('graus : ')
+//     let F = C * 1.8 + 32
+//     console.log(`${C}°C equivalem a ${F}°F`)
+// }
+// converterTemperatura()
 console.log("_______________________________");
 
 
@@ -183,8 +213,15 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
+// function listarFilmes() {
+//     for (let i = 0; i <= filmes.length; i++) {
+//     console.log(`${i+1} - ${filmes[i]}`)
+//     }
+// }
 
-console.log("_______________________________");
+// listarFilmes()
+// listarFilmes()
+// console.log("_______________________________");
 
 
 // ------------------------------------------------------------
@@ -202,8 +239,29 @@ console.log("_______________________________");
 // E chame a função principal.
 
 // → Seu código aqui:
+function limparTela() {
 
+    for(let i = 0; i < 30; i++)
+    console.log('')
+}
 
+function banner() {
+    for(let i = 0; i < 3; i++)
+    console.log("-----------")
+
+}
+
+function pedirNome() {
+let nome = LerTeclado.question('nome : ')
+console.log(`Ola, ${nome}`)
+}
+
+function rodape() {
+    "Sistema desenvolvido por <seu nome>
+}
+limparTela()
+banner()
+pedirNome()
 console.log("_______________________________");
 
 
