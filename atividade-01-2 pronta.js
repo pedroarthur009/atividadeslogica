@@ -13,9 +13,9 @@
 // Monte uma frase usando template literal que se apresente e diga o que gosta de fazer.
 
 // → Seu código aqui:
-let nome = 'Pedro'
+//let nome = 'Pedro'
 //let idade = '16'
-let hobby = 'videogame'
+//let hobby = 'videogame'
 //let Apresentação = `me chamo ${nome} tenho ${idade} e gosto de ${hobby}`
 
 console.log();
@@ -29,7 +29,7 @@ console.log();
 
 // → Seu código aqui:
 //let cidade = 'JaraguadoSul'
-let temperaturaAtual = '26'
+//Jlet temperaturaAtual = '26'
 //let minhacity = `Hoje em ${cidade} está fazendo ${temperaturaAtual}°C, perfeito para se divertir `
 
 console.log();
@@ -48,8 +48,13 @@ let indefinido;                    // undefined
 let nulo = null;                 // null
 
 
+console.log(`a palavra ${texto} é do tipo ${typeof texto}`)
+console.log(`o numero ${numero} é do tipo ${typeof numero}`)
+console.log(`${ativo} é do tipo ${typeof ativo}`)
+console.log(`${indefinido} é do tipo ${typeof indefinido}`)
+console.log(`${nulo} é do tipo ${typeof nulo}`)
 
-console.log(`${typeof texto} valor = ${typeof numero}, tipo = ${typeof ativo}`);
+
 
 // ------------------------------------------------------------
 // EXERCÍCIO 4 – Mini história
@@ -74,9 +79,9 @@ console.log(completar);
 // → Seu código aqui:
 let meunome = 'predo'
 let meta = 'completar a escola'
-let esseano = `${meunome} este ano tem a meta de ${meta}`
+let esseano = `${meunome} este ano tenho a meta de ${meta}`
 
-console.log(esseano );
+console.log(esseano);
 
 // ------------------------------------------------------------
 // EXERCÍCIO 6 – Menu
